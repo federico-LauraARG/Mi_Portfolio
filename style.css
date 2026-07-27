@@ -170,7 +170,7 @@ a:hover {
     background-color: var(--bg-color);
     padding: 80px  10%;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     min-height: 100vh;
     margin: 0 auto;
 }
