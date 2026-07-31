@@ -71,9 +71,11 @@ a:hover {
 .header__name h1{
     margin:7px 0 0 15px;
     color: #357df3;
-    filter: drop-shadow(0 0 10px #146fe6fa);
-    font-family: verdana;
+    filter: drop-shadow(0 0 8px #146fe6fa);
+    font-family: 'Dancing Script', cursive;
+    font-size: 2 rem;
 }
+
 
 
 
@@ -341,6 +343,7 @@ a:hover {
 .projects__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: start;
     text-align: center;
     margin: 20px 52px;
     gap: 25px;
@@ -360,11 +363,12 @@ a:hover {
 .projects__cards img {
     width: 80%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .projects__cards p {
     font-size: 0.7rem;
+    min-height: 60px;
 }
 
 .projects h2 {
@@ -398,6 +402,15 @@ a:hover {
     cursor: pointer;
 }
 
+.section-link {
+    color: #176cf5;
+}
+
+@media screen and (min-width: 1200px) {
+    .projects__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 /*SECTION CONTACT*/
 
 /*Diseño centrado y ancho controlado
@@ -451,6 +464,8 @@ a:hover {
 
 .cursor:hover {
     cursor: pointer;
+    background-color: #176cf5;
+    transform: scale(1.01);
 }
 
 
